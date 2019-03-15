@@ -10,8 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var firstLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.firstLabel.text="My Name is:"
+        title = "About Me"
+        navigationItem.title = "About Me"
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
