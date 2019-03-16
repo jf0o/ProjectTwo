@@ -10,14 +10,18 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet var secondTabLabel: UILabel!
+    @IBOutlet var secondLabel: UILabel!
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var displayTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.secondTabLabel.text="Tab Two"
+        self.secondLabel.text="Weather"
         title = "Weather"
-        navigationItem.title = "Weather" 
+        navigationItem.title = "Weather Converter"
+        tabBarItem.title = "Weather"
+        self.displayTextLabel.text=""
 
         // Do any additional setup after loading the view.
     }
