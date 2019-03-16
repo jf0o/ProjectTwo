@@ -93,7 +93,7 @@
                                 <rect key="frame" x="122" y="529" width="149" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -136,11 +136,11 @@
             </objects>
             <point key="canvasLocation" x="-653" y="-109"/>
         </scene>
-        <!--Item 1-->
+        <!--About Me-->
         <scene sceneID="X0A-UI-Zpc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBZ-TC-8qb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="clY-ht-hRc"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="aboutMe" id="clY-ht-hRc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lX1-jj-eo1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -155,11 +155,11 @@
             </objects>
             <point key="canvasLocation" x="300" y="-442.12893553223392"/>
         </scene>
-        <!--Item 2-->
+        <!--Weather-->
         <scene sceneID="RDq-Y9-g2d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3nY-at-EXN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="jSk-k6-Wwm"/>
+                    <tabBarItem key="tabBarItem" title="Weather" image="weather" id="jSk-k6-Wwm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fkS-JC-3Iu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -190,11 +190,11 @@
             </objects>
             <point key="canvasLocation" x="1239" y="984"/>
         </scene>
-        <!--Item-->
+        <!--Bucket List-->
         <scene sceneID="MvQ-zY-xlQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qNZ-oB-4qz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aLB-Gf-v0X"/>
+                    <tabBarItem key="tabBarItem" title="Bucket List" image="bucketList" id="aLB-Gf-v0X"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="76R-E9-QiF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -210,4 +210,9 @@
             <point key="canvasLocation" x="300" y="984"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutMe" width="25" height="25"/>
+        <image name="bucketList" width="25" height="25"/>
+        <image name="weather" width="25" height="25"/>
+    </resources>
 </document>
