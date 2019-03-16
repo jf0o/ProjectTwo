@@ -9,24 +9,29 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
-    @IBOutlet var secondLabel: UILabel!
+    
     @IBOutlet var textField: UITextField!
     @IBOutlet var displayTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.secondLabel.text="Weather"
-        title = "Weather"
-        navigationItem.title = "Weather Converter"
-        tabBarItem.title = "Weather"
-        self.displayTextLabel.text=""
+       
 
         // Do any additional setup after loading the view.
+        self.displayTextLabel.text=""
     }
     
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func setLabelButtonPressed(_ sender: Any) {
+        var userText: String!
+        userText = self.textField.text
+        self.displayTextLabel.text=userText
+    
+    }
     /*
     // MARK: - Navigation
 
