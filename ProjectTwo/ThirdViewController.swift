@@ -9,26 +9,33 @@
 import UIKit
 
 class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  var myBucketList = ["Travel the world", "Take care of my parents", "Move to Canada"]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myBucketList.count
+    
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        _ = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+        _ = myBucketList[indexPath.row]
+        cell.myBucketList.text = next
+        return cell
+    }
+    
+    
+    
+  var myBucketList = ["Travel the world", "Become a Youtuber", "Move to Canada"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
    
-        <#code#>
-    }
-    override func didReceiveMemoryWarning() {
+        
+        func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     }
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
-        let text = myBucketListArray[indexPath.row]
-        return cell 
-    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-   return myBucketList.contains(<#T##element: String##String#>)
-
         // Do any additional setup after loading the view.
     }
        /*
